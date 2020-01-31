@@ -1,0 +1,5 @@
+1)//div[@class="r"]/a/h3[text()]
+
+2)//link[@rel="canonical"]/@href 
+
+3) //div[@class="g"][position() mod 2 = 1 ][not(last and 0)]/div/div/div/a[@href]
