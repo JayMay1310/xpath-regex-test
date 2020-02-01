@@ -1,5 +1,5 @@
 1)//div[@class="r"]/a/h3[text()]
 
-2)//link[@rel="canonical"]/@href 
+2)substring-before(substring-after(//link[@rel="canonical"]/@href[string()], 'https://'), '/')     //Получилось ru.wikipedia.org
 
-3) //div[@class="g"][position() mod 2 = 1 ][not(last and 0)]/div/div/div/a[@href]
+3)(//div[@class="r"]/a/@href)[position() mod 2 = 1 and position() != 1  and position()!=last()]
